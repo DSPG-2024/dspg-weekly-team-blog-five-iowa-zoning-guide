@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -115,12 +81,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="a-focus-on-data-collection" class="level2">
 <h2 class="anchored" data-anchor-id="a-focus-on-data-collection">A focus on data collection</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"First some R Code"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "First some R Code"</code></pre>
-</div>
-</div>
+</section>
+<section id="what-does-a-city-zoning-code-look-like" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-a-city-zoning-code-look-like">What does a city zoning code look like?</h2>
+<p>Most larger cities have zoning setbacks and other numerical-based regulations in a table. They also frequently provide ‘use tables’ which do what they sound like; they tell all of the different uses permitted in a zone. Larger cities tend to have between 25 to 40 zoning districts.</p>
+<p>Smaller cities, however, tend to group all the information together without any tables, as there is less information to sort through. There are frequently less than 15 zoning districts for smaller cities, though we have not yet encountered a city with fewer than seven districts.</p>
+<p>This is an example of what district code for a zone in a smaller town might look like. The example is from the zoning code of Bellmond Iowa, which is part of the MIDAS COG.</p>
+<p><img src="imgs/BellmondR1.png"></p>
+</section>
+<section id="what-do-we-look-for-when-were-zoning" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-we-look-for-when-were-zoning">What do we look for when we’re zoning?</h2>
+<p>When we’re looking over zoning code, we focus on the residential uses permitted in that area. This includes looking at how many housing units are allowed on one lot, the type of dwelling units permitted (e.g.&nbsp;is a tiny house permitted?), and whether or not the district allows both residential and commercial uses.</p>
+<p>Once we’re looking at a specific district, we can encode requirements for setbacks (aka, how far the building has to be from the property line), lot area, parking requirements, number of bedrooms, unit area, landscaping, and much more.</p>
+</section>
+<section id="how-much-have-we-mapped" class="level2">
+<h2 class="anchored" data-anchor-id="how-much-have-we-mapped">How much have we mapped?</h2>
+<p>We are becoming faster at encoding data as we do more of it; almost a quarter of what we’ve done so far has been submitted this week. <img src="imgs/ArcGISprogress.png" width="900"></p>
+<p>The map showing how many different cities has grown steadily more blue. <img src="imgs/GISprogress.png" width="900"></p>
 </section>
 
 </main>
