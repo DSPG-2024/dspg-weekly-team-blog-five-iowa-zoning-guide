@@ -6,9 +6,9 @@ on: [push]
 
 env:
   MARKDOWN_DOCUMENT: Weekly_Team_Blog.qmd
-  QMD_TITLE: \"Housing and AI Week No\" \"Community Capitals Week No\", \"Iowa Zoning Guide Week No\"
-  QMD_AUTHOR: \[\"Harun Celik\"\] \[\"Housing and AI\"\] \[\"Community Capitals\"\], \[\"Iowa Zoning Guide\"\]
-  QMD_TAGS: \[\"Week No\"\]
+  QMD_TITLE: \"Iowa Zoning Guide Week Five\"
+  QMD_AUTHOR: \[\"Iowa Zoning Guide\"\]
+  QMD_TAGS: \[\"Week Five\"\]
 
 jobs:
   install-dependencies:
