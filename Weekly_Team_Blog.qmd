@@ -43,7 +43,7 @@ We are becoming faster at encoding data as we do more of it; almost a quarter of
 <img src="imgs/ArcGISprogress.png" width='900'>
 
 The map showing how many different cities has grown steadily more blue.
-<img src="imgs/GISprogress.png" width='900'>
+<img src="imgs//GISprogress.png" width='900'>
 
 ## How many districts have we completed?
 We have completed 1,150 districts in total, with 75 cities fully completed.
