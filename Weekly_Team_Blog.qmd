@@ -44,3 +44,7 @@ We are becoming faster at encoding data as we do more of it; almost a quarter of
 
 The map showing how many different cities has grown steadily more blue.
 <img src="imgs/GISprogress.png" width='900'>
+
+## How many districts have we completed?
+We have completed 1,150 districts in total, with 75 cities fully completed.
+<img src="imgs/SurveyGraph.png" width='900'>
