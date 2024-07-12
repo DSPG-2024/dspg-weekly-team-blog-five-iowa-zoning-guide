@@ -1,38 +1,50 @@
 ---
-title: "- Week Two"
-author: ["Housing and AI", "Community Capitals", "Iowa Zoning Guide"]
-date: "6/7/2024"
-categories: ["Week Two"]
+title: "Iowa Zoning Guide Week Five"
+author: ["Iowa Zoning Guide"]
+date: "7/12/2024"
+categories: ["Week Five"]
 format: html
 ---
 
-```{r setup, include=FALSE}
-library(reticulate)
+## Introduction
+
+#### This week, our focus shifted towards zoning codes to achieve our goal of coding data for 100 cities by July 26th. To gain deeper insights, we also met with a Cedar Rapids city zoning council member to discuss key aspects of their zoning regulations.
+
+
+## Housing Permit Analysis Visualization
+
+#### We've created a data visualization that effectively explains building permit trends across Iowa cities. The next step is to develop a written analysis accompanying the visualization. Where I will provide valuable insights into the correlations between zoning, building permits, and housing affordability in Iowa.
+
+```{=html}
+<div class='tableauPlaceholder' id='viz1720809856829' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewHousingPermitsAnalysis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NewHousingPermitsAnalysis&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='device' value='desktop' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewHousingPermitsAnalysis&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1720809856829');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
 ```
 
-```{r}
-print("First some R Code")
-```
+## A focus on data collection
 
-```{r, eval=TRUE}
-# Check for virtual environment, if it doesn't exist, create the venv, if it exists
-# then use the venv called "r-python"
+## What does a city zoning code look like?
 
-if (virtualenv_exists("r-python")) {
-  use_virtualenv("r-python")
-} else {
-  virtualenv_create("r-python")
-  use_virtualenv("r-python")
-}
-```
+Most larger cities have zoning setbacks and other numerical-based regulations in a table. They also frequently provide 'use tables' which do what they sound like; they tell all of the different uses permitted in a zone. Larger cities tend to have between 25 to 40 zoning districts.
 
-```{r, eval=TRUE}
-# Installing dependencies for the python virtualenv
+Smaller cities, however, tend to group all the information together without any tables, as there is less information to sort through. There are frequently less than 15 zoning districts for smaller cities, though we have not yet encountered a city with fewer than seven districts.
 
-virtualenv_install(envname = "r-python", packages = c("numpy", "pandas", "scikit-learn"), all = TRUE)
-```
+This is an example of what district code for a zone in a smaller town might look like. The example is from the zoning code of Bellmond Iowa, which is part of the MIDAS COG.
 
-```{python}
-import pandas as pd
-print("Currently using Pandas Version:", pd.__version__)
-```
+<img src="imgs/BellmondR1.png">
+
+## What do we look for when we're zoning?
+
+When we're looking over zoning code, we focus on the residential uses permitted in that area. This includes looking at how many housing units are allowed on one lot, the type of dwelling units permitted (e.g. is a tiny house permitted?), and whether or not the district allows both residential and commercial uses.
+
+Once we're looking at a specific district, we can encode requirements for setbacks (aka, how far the building has to be from the property line), lot area, parking requirements, number of bedrooms, unit area, landscaping, and much more.
+
+## How much have we mapped?
+We are becoming faster at encoding data as we do more of it; almost a quarter of what we've done so far has been submitted this week.
+<img src="imgs/ArcGISprogress.png" width='900'>
+
+The map showing how many different cities has grown steadily more blue.
+<img src="imgs//GISprogress.png" width='900'>
+
+## How many districts have we completed?
+We have completed 1,150 districts in total, with 75 cities fully completed.
+<img src="imgs/SurveyGraph.png" width='900'>
